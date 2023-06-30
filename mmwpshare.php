@@ -2,7 +2,7 @@
 defined('ABSPATH') || exit;
 /**
  *=========================
- *Plugin Name: MM WP Share
+ *Plugin Name: MasMons WP Share
  *Plugin URI: https://budiharyono.com/
  *Description: Share your post to social media
  *Version: 1.0.0 Beta
