@@ -1,0 +1,13 @@
+.cf-container__fields.magrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 10px;
+  padding: 1rem;
+}
+.cf-container__fields.magrid .cf-field.cf-checkbox .cf-field__body label {
+  font-size: 13px !important;
+}
+
+.cf-container__fields.magrid .cf-field.cf-checkbox {
+  border-width: 0 !important;
+}

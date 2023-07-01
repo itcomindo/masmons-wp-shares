@@ -36,3 +36,19 @@ function mmwpshare_check_carbon_fields_deactivation()
         deactivate_plugins(plugin_basename(__FILE__));
     }
 }
+include 'mmwpshare-options.php';
+include 'mmwpshare-core.php';
+include 'mmwpshare-icons.php';
+include 'mmwpshare-ui.php';
+
+/**
+ *=========================
+ *Load CSS and JS for admin
+ *=========================
+ */
+add_action('admin_enqueue_scripts', 'mmwpshare_admin_enqueue_scripts');
+function mmwpshare_admin_enqueue_scripts()
+{
+    wp_enqueue_style('mmwpshare-admin-css', plugins_url('mmwpshare-admin.css', __FILE__));
+    wp_enqueue_script('mmwpshare-admin-js', plugins_url('mmwpshare-admin.js', __FILE__), array('jquery'), '1.0.0', true);
+}

@@ -1,0 +1,29 @@
+#wpspr {
+  width: 300px;
+  box-sizing: border-box;
+}
+
+#wpspr div,
+#wpspr span,
+#wpspr a {
+  box-sizing: border-box;
+}
+
+#wpswr {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(40px, 1fr));
+  align-items: center;
+  gap: 8px;
+}
+.wpsitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.wpsitem i {
+  fill: #ffffff;
+  position: relative;
+  top: 2px;
+}
